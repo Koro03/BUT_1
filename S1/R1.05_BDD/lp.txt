@@ -1,0 +1,126 @@
+EX1 :
+1.
+TYPE DNOFOUR POSSREP {
+	DNOMFOUR CHAR
+	CONSTRAINT LENGTH(DNOMFOUR) <= 3
+	AND STARTS_WITH(DNOMFOUR, 'F')
+	AND IS_DIGITS(SUBSTRING(DNOMFOUR,1))
+};
+
+TYPE DNOMF POSSREP {DNOMF CHAR};
+TYPE DVILLE POSSREP {DVILLE CHAR};
+
+2.
+VAR fournisseur BASE RELATION {
+	no_four DNOFOUR, 
+	nom_f DNOMF, 
+	ville DVILLE
+} KEY{no_four};
+
+3.
+FOURNISSEUR := RELATION {
+	TUPLE {no_four DNOFOUR("F1"), nom_f DNOMF("Bourhis"),  ville DVILLE("Paris")},
+	TUPLE {no_four DNOFOUR("F2"), nom_f DNOMF("Bourhis"), ville DVILLE("Paris")},	
+	TUPLE {no_four DNOFOUR("F3"), nom_f DNOMF("Collet"),  ville DVILLE("Reims")},
+	TUPLE {no_four DNOFOUR("F4"), nom_f DNOMF("Bossuet"),  ville DVILLE("Dijon")},
+	TUPLE {no_four DNOFOUR("F5"), nom_f DNOMF("Mercier"),  ville DVILLE("Riec")},
+	TUPLE {no_four DNOFOUR("F6"), nom_f DNOMF("Tanguy"),  ville DVILLE("Lannion")}
+};
+
+4.
+count(fournisseur{no_four}) = count(fournisseur}  -> renvoi true donc ça peut être un clé
+count(fournisseur{nom_f}) = count(fournisseur}	  -> renvoi false
+count(fournisseur{ville}) = count(fournisseur}	  -> renvoi false
+count(fournisseur{nom_f, ville}) = count(fournisseur}	  -> renvoi false
+
+5.
+TYPE DNOMP possrep {DNOMF CHAR};
+TYPE DCOULEUR possrep {DCOUL CHAR};
+TYPE DNOPRODUIT possrep {
+	DNOPROD CHAR
+	CONSTRAINT LENGTH(DNOPROD) <= 3
+	AND STARTS_WITH(DNOPROD, 'P')
+	AND IS_DIGITS(SUBSTRING(DNOPROD,1))
+};
+
+VAR produit REAL RELATION {
+	no_produit DNOPRODUIT,
+	couleur DCOULEUR,
+	nom_p DNOMP,
+	origine DVILLE
+} KEY{no_produit};
+
+produit := RELATION {
+	TUPLE {no_produit DNOPRODUIT("P3"), nom_p DNOMP("Huitre"), couleur DCOULEUR("Vert"), origine DVILLE("Riec")},
+	TUPLE {no_produit DNOPRODUIT("P4"), nom_p DNOMP("Moutarde"), couleur DCOULEUR("Jaune"), origine DVILLE("Dijon")},
+	TUPLE {no_produit DNOPRODUIT("P5"), nom_p DNOMP("Salade"), couleur DCOULEUR("Vert"), origine DVILLE("Nice")},
+	TUPLE {no_produit DNOPRODUIT("P2"), nom_p DNOMP("Champagne"), couleur DCOULEUR("Blanc"), origine DVILLE("Reims")},
+	TUPLE {no_produit DNOPRODUIT("P1"), nom_p DNOMP("Cassis"), couleur DCOULEUR("Rouge"), origine DVILLE("Dijon")},
+	TUPLE {no_produit DNOPRODUIT("P6"), nom_p DNOMP("Cornichon"), couleur DCOULEUR("Vert"), origine DVILLE("Dijon")},
+	TUPLE {no_produit DNOPRODUIT("P7"), nom_p DNOMP("Muscadet"), couleur DCOULEUR("Blanc"), origine DVILLE("Nantes")}
+};
+
+
+EX2 :
+
+1.
+TYPE DQUANTITE possrep {
+	DQUANTI INT,
+	CONSTRAINT DQUANTI>=1 AND DQUANTI<=10
+};
+
+2.
+VAR fourniture REAL RELATION{
+	no_four DNOFOUR,
+	no_produit DNOPRODUIT,
+	quantite DQUANTITE
+} KEY{NOFOUR,NOPRODUIT};
+
+3.
+fourniture := RELATION {
+	TUPLE {no_four DNOFOUR("F1"), no_produit DNOPRODUIT("P1"), quantite DQUANTITE(2)} ça marche pas
+};
+
+4.
+INSERT fourniture := RELATION {
+	TUPLE {no_four DNOFOUR("F12"), no_produit DNOPRODUIT("P1"), quantite DQUANTITE(2)}
+};
+
+5.
+CONSTRAINT fourniture_fk_four
+	fourniture{no_four} <= fournisseur{no_four};
+CONSTRAINT fourniture_fk_prod
+	fourniture{no_produit} <= produit{no_produit};
+6.
+
+
+EX3:
+
+1.  s = produit{nom_p}
+2.  s = produit WHERE origine=DVILLE("Dijon")
+3.  s = produit WHERE origine=DVILLE("Dijon") AND {nom_p}
+4.  s = fourniture{no_four}
+5.  s = fournisseur{no_four} MINUS fourniture{no_four}
+6.  s = fourniture WHERE no_produit=DNOPRODUIT("P6") AND {no_four}
+7.  s = fourniture WHERE no_produit<>DNOPRODUIT("P6") AND {no_four}
+8.  s = fourniture WHERE no_produit
+9.  s = 
+10. s = 
+11. s = fourniture WHERE no_produit=DNOPRODUIT("P6") OR no_produit=DNOPRODUIT("P4") AND {no_four}
+12. s = fourniture WHERE ((no_produit="P6") AND (no_produit="P4")){no_four}
+13. s = 
+14. s = fourniture join fournisseur WHERE fourniture.no_produit="P6" AND {fournisseur.no_four, fournisseur.nom_f}
+15. s = 
+16. s = fournisseur join fourniture join produit WHERE fourniture.no_produit=
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\benfa\Documents\Iut_1a\S2\POO\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1172654722.index
+1817804796.index
+32564334.index
+4074666015.index

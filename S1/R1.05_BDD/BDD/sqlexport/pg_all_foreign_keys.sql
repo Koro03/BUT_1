@@ -1,0 +1,4 @@
+INSERT INTO pg_all_foreign_keys (fk_schema_name,fk_table_name,fk_constraint_name,fk_table_oid,fk_columns,pk_schema_name,pk_table_name,pk_constraint_name,pk_table_oid,pk_index_name,pk_columns,match_type,on_delete,on_update,is_deferrable,is_deferred) VALUES ('public','commande','commande_fk_stock',5840908,'{num_art_c}','public','stock','stock_pk',5840911,'stock_pk','{num_art}',NULL,'NO ACTION','NO ACTION',false,false);
+INSERT INTO pg_all_foreign_keys (fk_schema_name,fk_table_name,fk_constraint_name,fk_table_oid,fk_columns,pk_schema_name,pk_table_name,pk_constraint_name,pk_table_oid,pk_index_name,pk_columns,match_type,on_delete,on_update,is_deferrable,is_deferred) VALUES ('public','commande','commande_fk_client',5840908,'{num_cli_c}','public','client','client_pk',5840905,'client_pk','{num_cli}',NULL,'NO ACTION','NO ACTION',false,false);
+
+COMMIT;

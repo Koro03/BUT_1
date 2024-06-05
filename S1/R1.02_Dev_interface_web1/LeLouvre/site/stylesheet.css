@@ -1,0 +1,129 @@
+body{
+    background-image: url(images/fond.gif);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+main{
+    background-color: #ffffe0;
+    border: solid 5px #a52a2a;
+    margin-top: 10px;
+    padding: 10px 30px; 
+    margin-left: 30em;
+    width: 50em;
+}
+header{
+    position: fixed;
+    width: 22em;
+    top: 6em;
+    left: 0;
+    background-color: #ffffe0;
+    border: solid 5px #a52a2a;
+    margin-top:10px;
+    padding: 10px 30px;
+    
+}
+
+h1{
+    border-left: double #a52a2a;
+    text-align: center;
+}
+blockquote{
+    color: #ffffe0;
+    margin:  5px 100px;
+    background-color: #a52a2a;
+    border-radius: 10px;
+    
+}
+
+h2{
+    border-left:solid 8px #a52a2a ;
+    border-bottom: solid 2px #a52a2a;
+    font-size: 1.3em;
+    font-family: 'techno',Arial, sans-serif ;
+    letter-spacing:10px ;
+}
+
+footer{
+    background-color: #a52a2a;
+    color: #ffffe0;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 4px 50px;
+    font-size: 0.7em;
+}
+
+blockquote + p::first-letter{
+    font-size: 4.7em
+}
+a, a:visited {
+    color: #a52a2a;
+
+}
+a:hover{
+    color: #ffffe0;
+    background-color: #f17676;
+}
+p + figure img{
+    border-right: double 10px #a52a2a;
+    border-left: double 10px #a52a2a;
+    background-color: #fff;
+    padding: 10px 50px  ;
+}
+h2 + p{
+    text-indent: 10px;
+}
+h2 +article{
+    float: right;
+    
+}
+h2 + figure{
+    margin-bottom:5px;
+    margin-top:5px ;
+    margin-left: 50px;
+}
+article + figure{
+    margin-bottom:5px;
+    margin-top:5px ;
+    margin-left: 50px;
+}
+figcaption{
+    background-color: #a52a2a;
+    color: #ffffe0;
+    border-radius: 10px;
+    
+}
+table{
+    border:solid 1px;
+    empty-cells: hide;
+    border-collapse: collapse;
+}
+th, td
+{
+    text-align: center;
+    border: 1px solid #a52a2a;
+}
+th{
+    background-color: #a52a2a;
+    color: #fff;
+}
+td{
+    background-color: #fff;
+    color: black;
+}
+tr td{
+    font-size:0.8em ;
+}
+tr + tr + tr{
+    font-size: 0.6em;
+}
+ul{
+    list-style-image: url(images/puce-pinceau.png);
+}
+ul li ul{
+    list-style-image: none ;
+}
+span{
+    background-color: #f17676;
+    color: #ffffe0;
+}

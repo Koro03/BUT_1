@@ -1,0 +1,19 @@
+.bouton{
+	-fx-background-color: white;
+	-fx-font-weight: bold;
+	-fx-border-color : black;
+	-fx-border-radius: 5;
+	-fx-border-width: 3;
+}
+
+.entete{
+	-fx-font-family: "Arial";
+	-fx-font-size: 18;
+	-fx-font-weight: bold;
+}
+
+.image{
+	-fx-border-color: brown;
+	-fx-border-style: dotted;
+	-fx-border-width: 5
+}

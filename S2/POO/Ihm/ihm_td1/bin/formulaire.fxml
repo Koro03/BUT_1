@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="premsPackages.controlleur_formu">
+   <children>
+      <Label text="Identité" />
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-border-color: BLACK; -fx-background-color: #EFEFEF;">
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="95.0" text="nom* :" />
+                  <TextField fx:id="nom_nb_carac" />
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="prénom* : " />
+                  <TextField fx:id="prenom_nb_carac" onKeyTyped="#prenom_correct" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="95.0" text="adresse* :" />
+                  <TextField fx:id="adresse1" onKeyTyped="#adresse_correct" prefHeight="25.0" prefWidth="348.0" />
+               </children>
+            </HBox>
+            <TextField fx:id="adresse2" onKeyTyped="#adresse_correct" prefWidth="348.0">
+               <VBox.margin>
+                  <Insets left="105.0" right="105.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="95.0" text="code postal*  :" />
+                  <TextField fx:id="code_postal" onKeyTyped="#code_postal_correct" prefWidth="70.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="ville* :" />
+                  <TextField fx:id="ville_nb_carac" onKeyTyped="#vile_nb_correct" prefHeight="25.0" prefWidth="293.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="95.0" text="téléphone :" />
+                  <TextField fx:id="numTel" prefWidth="130.0" />
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="130.0" text="(ex : 0654889796)" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="95.0" text="email*  :" />
+                  <TextField fx:id="email" onKeyTyped="#email_correct" prefWidth="280.0" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Label text="Abonnement" />
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-border-color: BLACK; -fx-background-color: #EFEFEF;">
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <RadioButton mnemonicParsing="false" selected="true" text="Formule DUO (81,47)">
+               <toggleGroup>
+                  <ToggleGroup fx:id="abo" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" selected="true" text="Formule NUMERIQUE (76,40)" toggleGroup="$abo" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Label text="Règlement" />
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-border-color: BLACK; -fx-background-color: #EFEFEF;">
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <RadioButton mnemonicParsing="false" selected="true" text="Prelevement">
+               <toggleGroup>
+                  <ToggleGroup fx:id="reglement" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" selected="true" text="Cheque" toggleGroup="$reglement" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <CheckBox mnemonicParsing="false" text="J'accepte de recevoir des informations sur mon journal" />
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="bnOk" alignment="CENTER_RIGHT" defaultButton="true" mnemonicParsing="false" onMouseClicked="#valider_formu" text="ok">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="Annuler" alignment="CENTER_RIGHT" cancelButton="true" mnemonicParsing="false" onMouseClicked="#annuler" text="Annuler">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

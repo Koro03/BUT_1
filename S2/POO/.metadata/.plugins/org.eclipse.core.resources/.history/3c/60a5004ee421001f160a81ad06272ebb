@@ -1,0 +1,23 @@
+package sae201;
+
+import java.util.ArrayList;
+
+class Plat {
+	private ArrayList<Recette>liste_recette;
+	private String nomString;
+	public Plat(String n,Recette r) {
+		// TODO Auto-generated constructor stub
+		this.nomString = n;
+		this.liste_recette = new ArrayList<Recette>();
+	}public ArrayList<Recette> getListe_recette() {
+		return liste_recette;
+	}public String getNomString() {
+		return nomString;
+	}public void affiche() {
+		
+	}public void ajouteR() {
+		
+	}public void supR() {
+		
+	}
+}

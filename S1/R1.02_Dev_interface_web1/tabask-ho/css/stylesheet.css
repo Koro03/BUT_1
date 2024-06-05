@@ -1,0 +1,1651 @@
+body{
+    background-image: linear-gradient(to bottom, #212b61, #313068,#313068, #2e2068, #4f3974, #5d3d7a);
+    margin: 1em;
+    padding: 1.5em;
+    font-family: Inter, Roboto, sans-serif;
+}
+
+/*******************************************************************************************
+*                           header                                                         *
+*                                                                                          *
+********************************************************************************************/
+header div{
+    display: inline-flex;
+    align-items: center;
+    
+}
+header div img{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    text-align: center; 
+    margin-left:60% ;
+    background-color: #5d3d7a;
+    color: #ffffff;
+    border: solid #5d3d7a ;
+    border-radius:3px ;
+    padding: 1em;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    letter-spacing: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #5d3d7a;
+    border-radius: 10px;
+    margin: 15px;
+    width: 100%;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #262c52);
+    box-shadow: inset 4.3px 4.3px 7px #6c488f;
+}
+nav a{
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #CF4307;
+    border-radius: 10px;
+    padding : 5px;
+    margin: 15px;
+    width: 15em;
+    text-align: center;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #51425e);
+    box-shadow: inset 4.3px 4.3px 7px #b95529;
+    transition: 0.25s;
+}
+nav a:hover{
+    filter: drop-shadow(0px 0px 0px rgb(63, 22, 102));
+    box-shadow:  inset 4.3px 4.3px 7px #7e2b08
+    
+}
+nav img{
+    margin: 15px; 
+   
+}
+nav div {
+    margin-right: auto;
+    margin-left: auto;
+}
+.petitHeader{
+    display: none;
+}
+/*******************************************************************************************
+*                                    les objets commun                                     *
+*                                                                                          *
+********************************************************************************************/
+
+main{
+    margin: auto;
+    padding: 1em;
+    color: #ffffff;
+}
+
+p{
+    color: #ffffff;
+    background-color: #5d3d7a;
+    padding: 1em ;
+    border: solid #5d3d7a;
+    border-radius: 10px;
+}
+article a{
+    color: #ffffff;
+    background-color: #CF4307;
+    border:solid 2px #CF4307;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+    
+}
+article a:hover{
+    color: #CF4307;
+    background-color: #fff;
+    border:solid #CF4307;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+article p + img{
+    width: 450px;
+    height: 20%;
+    float: right;
+}
+
+figure > img{
+    height: 50px;
+    
+}
+.casting{
+    display: inline-flex;
+    align-items: start;
+    justify-content: center;
+    flex-basis: 15em;
+    margin-right:2em;
+    margin-left: 7em;
+    margin-top: 4em;
+    padding: 1em;
+    
+    
+}
+ 
+.casting_img{
+    width: 9em;
+    height: 11em;
+    padding: 1em;
+    margin-right: 3em;
+    border-radius: 40%;
+    max-width: 100%;
+    filter: drop-shadow(4px 4px 4px#311f40);
+    
+    
+}
+
+.casting > figure{
+    height: 3em;
+}
+
+
+#fondviolet, #résumé{
+    box-shadow: inset 4.3px 4.3px 7px #644385, 5px 5px 10px #202020;
+    /**
+    box-shadow: -5px -5px 10px #60437b, 5px 5px 10px #202020 ;
+    */
+    border-radius: 0 20px 0 20px;
+    background-color: #5d3d7a;
+}
+
+#bande-annonce, #episode{
+    box-shadow: -5px -5px 10px #452271, 5px 5px 10px #202020;
+}
+
+#critique, .carroussel2{
+    box-shadow: -5px -5px 10px #3f1c76, 5px 5px 10px #202020 ;
+}
+.accueil{
+    background-color: initial;
+    box-shadow: none;
+    width: fit-content;
+}
+.accueil img{
+    margin: 0;
+    width: 32px;
+    height: 32px;
+}
+.accueil:hover{
+    background-color: initial;
+    box-shadow: none;
+    width: fit-content;
+}
+/*******************************************************************************************
+*                           main page : présentation ge                                    *
+*                                                                                          *
+********************************************************************************************/
+.presentation{
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+}
+.presentation p{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 2em;
+    margin-right: 40px;
+    margin-bottom:4em ;
+    border: 0;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #262c52);
+    box-shadow: inset 4.3px 4.3px 7px #6c488f;
+}
+.presentation img{
+    width:550px;
+    height: 50%;
+    float: right;
+     filter : drop-shadow(3.4px 3.4px 3.4px rgb(0, 0, 0));
+    
+    
+}
+
+.presentation figcaption a{
+    margin-left:40% ;
+    border: none;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(42, 14, 68));
+    transition: 0.25s;
+  
+}
+
+
+.mot-cle{
+    display: inline-flex;
+    padding: 5px;
+    margin-top: 1em;
+    border-radius: 30px;
+    width: 100%;
+    
+}
+.mot-cle p{
+    background-color: #8f2328;
+    padding: 5px;
+    margin: 10px;
+    border:solid 2px #8f2328;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: inset 4.3px 4.3px 7px #b72129;
+}
+.mot-cle img{
+    display: flex;
+    width: 64px;
+    height: 64px;
+    margin-left:auto ;
+    
+}
+
+.limite_motcle{
+    display: inline-flex;
+    width: 100%;
+    
+}
+
+.reward{
+    background-color: #2F3D8A;
+    padding: 1em;
+    margin:1em;
+    border: solid #2F3D8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #382a76);
+    box-shadow: inset 4.3px 4.3px 7px #35459d;
+    
+}
+.reward figure{
+    display: inline-flex;
+    align-items: center;
+    margin: 1em;
+}
+input{
+    display: none;
+    position: relative;
+    top: 15px;
+    width: 10em;
+    height: 2em;
+}
+.loupe:hover + input{
+    display: inline-block;
+}
+.poster img{
+    height: 330px;
+    width: 414px;
+}
+.poster{
+    font-size: larger;
+}
+.lienEpisode_limite_age{
+    display: inline-flex;
+    width: fit-content;
+    margin-right:2em;
+    margin-left: 2em ;
+    color: #fff;
+    
+    
+     
+}
+.lienEpisode_limite_age figure + img{
+    width: 64px;
+    height: 64px;
+
+     
+}
+.lienEpisode_limite_age figure{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    padding-right: 2em;
+    
+    
+}
+.lienEpisode_limite_age figcaption{
+    padding-left: 1em;
+    padding-right: 1em;
+    display: inline-flex;
+    width: 100%;
+
+}
+.lienEpisode_limite_age figcaption a{
+    display: inline;
+    background-color: transparent;
+    border: transparent;
+    width: 5em;
+    flex-wrap: nowrap;
+    
+}
+
+#pageSerieG{
+    width: fit-content;
+    margin-left: 20%;
+
+}
+.oscar_trophe{
+    display: inline-flex;
+}
+.oscar{
+    margin-left: 5%;
+    width: 80%;
+    
+    
+}
+.oscar img{
+    width: 80%;
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+        
+
+}
+.oscar a{
+    color: #fff ;
+    background-color:#CF4307 ;
+    padding: 1%;
+    padding-top: 0;
+    border-radius: 5px;
+}
+.trailer{
+    border: none;
+    background-color: initial;
+}
+.trailer:hover{
+    border: none;
+    background-color: initial;
+}
+
+
+
+/*******************************************************************************************
+*                           main page : backstage                                          *
+*                                                                                          *
+********************************************************************************************/
+/************************************************************************** DÉBUT PAGE BACKSTAGE **************************************************************************/
+/*********************************   Caroussel    ********************************************************/
+.carrousel > h1 {
+    margin: 0 28%
+}
+.slider-wrapper {
+    position: relative;
+    display: flex; /* Utilisation de flexbox pour centrer le contenu */
+    justify-content: center;
+    align-items: center;
+    height: 65vh; /* Ajustement de la hauteur à 100% de la vue */
+    margin-bottom: 5em;
+    margin-top: 3em;
+}
+
+.slider {
+    --slide-width: clamp(320px, 75vw, 1000px);
+    --slide-height: clamp(240px, 75vh, 550px);
+
+    display: grid;
+    grid-auto-flow: column;
+    scroll-snap-type: x mandatory;
+    max-width: var(--slide-width);
+    border: 4px solid #fff;
+    box-shadow: 0 2px 15px rgba(#000, 0.2), 0 2px 20px rgba(#000, 0.25);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slide > img {
+    width: clamp(320px, 75vw, 1000px);
+    height: clamp(240px, 75vh, 550px);
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    scroll-snap-align: start;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    background: center / cover no-repeat;
+}
+
+.dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 23px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dots a {
+    --dots-size: 16px;
+    width: var(--dots-size);
+    height: var(--dots-size);
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.85;
+    transition: opacity ease 200ms;
+    cursor: pointer;
+    border: #000 2px solid;
+}
+
+.dots a:hover {
+    opacity: 1;
+    background-color: #CF4307;
+    --dots-size: 20px;
+}
+
+/*********************************   fin Caroussel    ********************************************************/
+
+/*********************************  Texte voir plus   ********************************************************/
+  
+  .container {
+  position : relative;
+  width: 1000px;
+  min-height: calc(3rem + 20px);
+  height: calc(20rem + 20px);
+  line-height: 1.1rem;
+  border-radius : 6px;
+  padding : 10px;
+}
+
+.container.opened {
+  height : fit-content;
+}
+
+.container > p {
+  margin : 0;
+  height : 100%;
+  overflow: hidden;
+}
+.container > p > em {
+    float: right;
+    text-decoration: underline;
+}
+
+.container::before {
+  content : "Voir plus";
+  position : absolute;
+  bottom : 0;
+  right : 43%;
+  left: 43%;
+  padding-left : 10px;
+  padding-right : 10px;
+  padding-top : 2px;
+  padding-bottom : 2px;
+  background-color : #CF4307;
+  opacity : 0.85;
+  color : #FFFFFF;
+  text-align : center;
+  border-radius : 10px;
+}
+
+.container.opened::before {
+  content : "Voir moins";
+  align-items : center;
+  margin-bottom : -2px;
+}
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container > p > img[src="images/detaillé/NS.png"],
+.container > p > img[src="./images/detaillé/finnwolfhard.jpg"],
+.container > p > img[src="images/stranger_things_logo.png"]{
+    width: 150px;
+    height: 150px;
+    shape-outside: margin-box;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin: 10px 10px 5px 0;
+}
+.container > p > img[src="./images/detaillé/MBB.png"],
+.container > p > img[src="images/detaillé/GM.png"]{
+    width: 150px;
+    height: 150px;
+    shape-outside: margin-box;
+    object-fit: cover;
+    border-radius: 50%;
+    float: right;
+    margin: 10px 0 5px 5px;
+}
+/*********************************       Texte voir plus       ********************************************************/
+/*********************************      mid main      *****************************************************************/
+.midmain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom : 2em;
+    margin-bottom: 2em;
+}
+.castingbaiser{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 25em;
+    height: 30em;
+    justify-content: space-between;
+    
+}
+
+.castingbaiser > figure{
+    align-self: center;
+}
+.castingbaiser > figure > h4{
+    margin-bottom: 0.7em ;
+    text-align: center;
+    font-size:larger;
+}
+.castingbaiser > figure > img {
+    height: auto;
+    width: 20em;
+    border-radius: 10px;
+    
+}
+.castingbaiser > figure > figcaption{
+    font-size: 15px;
+    margin-left: 70%;
+}
+/*********************************      fin mid main      *****************************************************************/
+/*********************************      début groupe annecdotes       *****************************************************/
+
+
+.groupeanecdote{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#secrettournage {
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 5px;
+}
+
+.groupeanecdote > article{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 15px 3em;
+    background-color: #111A4B;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.groupeanecdote > article > img {
+    border-radius: 10px;
+    height: auto;
+    margin: 20px 30px;
+}
+
+.groupeanecdote > article > .textscrollbar{
+    flex-grow: 1;
+    background-color: transparent;
+    overflow: auto;
+    height: 15em;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    
+}
+
+.groupeanecdote > article > .textscrollbar > p{
+    background-color: #111A4B;
+    border-radius: 0;
+    border: none;
+    margin: 0 10px 5px 10px;
+
+}
+
+/*barre de scroll personnalisée*/
+
+.textscrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.textscrollbar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.textscrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #808080;
+}
+
+
+/*fin barre de scroll personnalisée*/
+
+/*********************************      fin groupe annecdotes       *******************************************************/
+/*********************************      liste betisier      ***************************************************************/
+
+
+.listebetisier {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    margin-bottom: 2em;
+    margin-top: 4em;
+}
+.listebetisier > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.listebetisier > ul > li {
+    margin: 0 40px; 
+    background-color: #111A4B;
+    border-radius: 10px;
+    padding: 1.5em 3em;
+}
+
+/*********************************      fin liste betisier      ***********************************************************/
+
+/************************************************************************** FIN PAGE BACKSTAGE **************************************************************************/
+/*******************************************************************************************
+*                           main page : présentation détaillé                              *
+*                                                                                          *
+********************************************************************************************/
+#section1{
+    
+    margin: 15px 15px 3em auto;
+    padding: 3em 1em 1em 1em;
+    display: inline-flex;
+    width: 100%;
+    border-radius: 0px 20px 0px 20px;
+}
+/*******************************************************************************************
+*                           main page : présentation episode et saison                     *
+*                                                                                          *
+********************************************************************************************/
+
+
+#casting{
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    background-color: #5d3d7a;
+}
+
+#limite_age{
+    height: 5em;
+    width: 5em;
+}
+
+#info_gen{
+    display: flex;
+    flex-direction: column;
+    width: 13em;
+    margin: auto auto 5em;
+}
+
+#info_gen > h2{
+    text-align: center;
+}
+
+#poster{
+    height: 300px;
+}
+
+#résumé{
+    background-color: #5d3d7a;
+    padding: 0.5em;
+    
+}
+
+#colonnedroite{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+}
+
+
+
+
+
+/* debut du main principal page detaillé*/
+
+
+#section2{
+    display: inline-flex;
+
+    width: 100%;   
+}
+
+/*colonne 1 = bande annonce et photo saisons*/
+
+#colonne1{
+    width: 30em;
+    margin-left: 1em;
+    margin-right: 5em;
+    
+}
+
+.Colonne1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width:30em;
+    margin-bottom: 5em;
+    border-radius: 0px 20px 0px 20px;
+
+}
+
+#bande-annonce{
+    background-color:#111A4B;
+    padding: 20px;
+    width: 35em;
+    height: 25em;
+    margin-top: 2em;
+}
+
+video{
+    align-self: center;
+    width: 30em;
+    height: 20em;
+}
+
+
+#photo_saison > img{
+    align-self: center;
+    height: 20em;
+    width: 30em;
+    margin-top: 2em;
+}
+
+
+/*colonne2 = critique et episodes*/
+
+.Colonne2{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    
+}
+
+
+#critique{
+    background-color:#5D3D7A ;
+    border-radius: 0px 20px 0px 20px;
+    width: 25em;
+    height: 25em;
+    text-align: center;
+    margin: 0.5em 3em 7em 3em;
+    padding: 2em;
+
+}
+strong{
+    font-size: 1.5em;
+}
+
+.photo_profil{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+#etoile{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#episode{
+    background-color: #111A4B;
+    padding: 2em;
+    margin-right: 4em;
+    height: 60em;
+    width: 32em;
+    border-radius: 0px 20px 0px 20px;
+}
+
+    
+
+.ep{
+    display: flex;
+    flex-direction: row;
+    margin :10px;
+    align-items: center;
+
+}
+.ep > figcaption{
+    width: fit-content;
+}
+#episode > figure{
+    margin: 2em;
+}
+
+#episode > p{
+    background-color: #CF4307;
+    width: fit-content;
+    position: relative;
+    left: 20em;
+}
+
+.initial-hidden {
+    display: none;
+    background-color: transparent;
+}
+
+.hidden p{
+    background-color: transparent;
+    border: none;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+}
+
+#backstage{
+    width: fit-content;
+}
+
+
+/*Caroussel2*/
+.carroussel2{
+    background-color: #5d3d7a;
+    padding: 20px;
+    width: 35em;
+    height: 25em;
+    margin-top: 2em;
+    border-radius: 0px 20px 0px 20px;
+
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.slider-wrapper2 {
+	position: relative;
+	display: flex; /* Utilisation de flexbox pour centrer le contenu */
+	justify-content: center;
+	align-items: center;
+	height: 50vh; /* Ajustement de la hauteur à 100% de la vue */
+}
+
+.slider2 {
+	--slide-width: clamp(320px, 75vw, 800px);
+	--slide-height: clamp(240px, 75vh, 600px);
+
+	display: grid;
+	grid-auto-flow: column;
+	scroll-snap-type: x mandatory;
+	max-width: var(--slide-width);
+	border: 5px solid #fff;
+	box-shadow: 0 2px 15px rgba(#000000, 0.2), 0 2px 20px rgba(#000, 0.25);
+	overflow-y: hidden;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slide2 {
+	scroll-snap-align: start;
+	width: 510px;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.dots2 {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: 15px;
+	z-index: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dots2 a {
+	--dots-size2: 8px;
+
+	width: var(--dots-size2);
+	height: var(--dots-size2);
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+	cursor: pointer;
+}
+
+.dots2 a:hover {
+	opacity: 1;
+}
+
+.caption {
+	display: block;
+	margin-top: 25px;
+	color: #999;
+	letter-spacing: 0.5px;
+}
+
+
+/* page backstage*/ 
+
+#backstage{
+    display: block;
+    height: 2em;
+    
+}
+
+#section2 > p{
+    background-color: #CF4307;
+}
+
+
+/*******************************************************************************************
+*                                           footer                                         *
+*                                                                                          *
+********************************************************************************************/
+
+
+footer{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    
+}
+footer figure{
+    display: inline-flex;
+    width: 17em;
+    margin-top: 2em ;
+    margin-left: auto;
+}
+footer figure img{
+    width: 32px;
+    height: 32px;
+}
+footer figcaption{
+    margin-right:2em;
+    margin-left: 2em ;
+    color: #fff;
+}
+footer figure + img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.reward{
+    background-color: #2F3D8A;
+    padding: 1em;
+    margin:1em;
+    margin-right: 3em;
+    border: solid #2F3D8A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+    
+}
+.reward figure{
+    display: inline-flex;
+    align-items: center;
+}
+input{
+    display: none;
+    position: relative;
+    top: 15px;
+    width: 10em;
+    height: 2em;
+}
+.loupe{
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
+}
+.poster img{
+    height: 330px;
+    width: 414px;
+}
+.poster{
+    font-size: larger;
+}
+
+
+/*Page Présentation_série_saison*/
+.dropdown {
+    position: relative;
+}
+.dropdown-child {
+    display: none;
+    background-color: #2F3D8A;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    min-width: 200px;
+}
+.dropdown:hover .dropdown-child, #ep, .mainsaison {
+    display: flex;
+}
+.mainsaison figure {
+    flex-basis: 30%;
+}
+.mainsaison ul {
+    flex-basis: 70%;
+}
+.detail{
+    color: #fff;
+    background-color: #CF4307;
+    border-radius: 10px;
+    padding : 5px;
+    margin: 15px;
+    width: 15em;
+    text-align: center;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #51425e);
+    box-shadow: inset 4.3px 4.3px 7px #b95529;
+}
+.detail:hover{
+    filter: drop-shadow(0px 0px 0px rgb(63, 22, 102));
+    box-shadow:  inset 4.3px 4.3px 7px #7e2b08
+}
+.description{
+    background-color: #111A4B;
+}
+ul {
+    list-style-type: none;
+}
+.play{
+    position: absolute;
+    z-index: 99;
+    top: 165px;
+    left: 90px;
+    height: 52px;
+    max-width: 48px;
+}
+.screenshot {
+    height: 142px;
+    width: 142px;
+}
+.screenshot, .description,#ep section {
+    margin: 5px;
+}
+.posterst {
+    height: 440px;
+    max-width: 230px;
+}
+.dropdown-child section {
+    font-size: small;
+}
+.reveal_episodes {
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.episodes {
+    display: none;
+}
+.mainmenubtn {
+    border: none;
+    background-color: #111A4B;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.reveal_episodes:hover .episodes {
+    display: block;
+}
+#ep{
+    background-color: #111A4B;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    min-width: 200px;
+}
+.descriptionep{
+    background-color: #2F3D8A;
+}
+/*FIN Page Présentation_série_saison*/
+.oscar p{
+    background-color: #2e2068;
+    border: #2e2068;
+    filter: drop-shadow(3.4px 3.4px 3.4px rgb(63, 22, 102)) drop-shadow(-3.4px -3.4px 3.4px #51425e);
+    box-shadow: inset 3.3px 3.3px 6px #3c2694;
+}
+
+/*******************************************************************************************
+*                           media querry page                                              *
+*                                                                                          *
+********************************************************************************************/
+@media (width > 1350px) {
+    #bande-annonce{
+        margin-left: 5em;
+    }
+    #critique{
+        margin: 0.5em 3em 7em 15em;
+    }
+    .carroussel2{
+        margin-left: 5em;
+    }
+    #episode{
+        margin-left: 10em;
+    }
+}
+
+
+@media (width < 1280px) {
+    #section2{
+        display: flex;
+        flex-direction: column;
+    }
+    #section2{
+        display: flex;
+        flex-direction: column;
+      }
+    .casting{
+        display: block;
+        content: "";
+        display: inline-flex;
+        clear: both;
+        margin-left: 0em;
+        
+    }
+    #colonnedroite{
+        flex-direction: column;
+    }
+    .casting figure {
+        margin-right: 0; /* Supprimer l'espacement horizontal pour les écrans plus petits */
+        margin-bottom: 10em;
+        
+    }
+    .casting_img{
+        height: 150px;
+        width: 130px;
+    }
+    #info_gen{
+        align-items: center;
+    }
+    #résumé{
+        margin-right: 2em;
+    }
+    #critique{
+        margin: 0.5em 3em 7em 6em;
+    }
+}
+
+@media (width < 1100px) {
+    /**********page detaillé******/
+    #section1{
+        flex-direction: column;
+    }
+    .casting{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #casting_img{
+        height: 150px ;
+        margin-right: 1em;
+    }
+    .casting > figure{
+        display: inline-flex;
+        height: 10em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    header nav a{
+        width: 5em;
+    }
+    .presentation img{
+        width: 100%;
+    }
+
+    /*******************page serie G***********/
+    #pageSerieG{
+        display: inline;
+        margin: 10%;
+        margin-left: 20%;
+        flex-wrap: nowrap;
+        margin-top: 5em;
+
+    }
+    #pageSerieG img{
+        margin: 0;
+
+    }
+    .oscar p{
+        width: 80%;
+        
+    }
+    .oscar{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .reward{
+        width: 40%;
+    }
+    
+
+}
+
+@media (width < 850px) {
+    #pageSerieG img{
+        width: 7em ; 
+        height: 8em;
+    }
+    #pageSerieG{
+        margin: 5%;
+    }
+    h1{
+        margin-left: 20%;
+    }
+    .oscar_trophe{
+        flex-direction: column;
+    }
+    .reward{
+        width: fit-content;
+        margin-left: 0;
+        padding: 0;
+    }
+    .oscar{
+        margin: 0;
+        width: fit-content;
+    }
+    .presentation{
+        display: block;
+        
+    }
+    
+}
+
+@media (width < 710px) {
+    .casting > figure{
+        flex-direction: column;
+        height: 10em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    #pageSerieG{
+        display: inline-flex;
+        margin: 1em;
+        margin-left: 10%;
+        padding-left:1em;
+        width: 45%;
+
+    }
+    h1{
+        margin-left:2em ;
+        padding-left:2% ;
+        padding-right:2% ;
+    }
+    .lienEpisode_limite_age figure + img{
+        width: 32px;
+        height: 32px;
+        margin-top: 25px;
+    }
+    .lienEpisode_limite_age figure > img{
+        width: 32px;
+        height: 32px;
+    }
+    
+
+
+    
+
+
+}
+
+/** media 429 px*/
+
+@media (width < 610px){
+    /**page détaillé*/
+    .casting{
+        display: flex;
+        content: "";
+        flex-direction: column;
+        clear: both;
+        justify-content: center;
+        align-items: center; 
+    }
+    #colonnedroite{
+        flex-direction: column;
+    }
+    .casting figure {
+        margin-right: 20px; /* Supprimer l'espacement horizontal pour les écrans plus petits */
+        margin-bottom: 3em;
+    }
+    .casting_img{
+        height: 150px;
+    }
+
+    #info_gen{
+        align-items: center;
+    }
+    #bande-annonce{
+        height: 18em;
+        width: 30em;
+        margin-right: 1em;
+    }
+    video{
+        height: 30em;
+        width: 23em;
+    }
+    .carroussel2{
+        padding: 10px;
+        width: 30em;
+        height: 25em;
+        margin-top: 1em ;
+        margin-bottom: 20px;
+    }
+    .slider2{
+        --slide-width: clamp(320px, 75vw, 500px);
+	    --slide-height: clamp(240px, 75vh, 200px);
+    }
+    #critique{
+        margin-left: 0.5em;
+    }
+    #episode{
+        width: 30em;
+    }
+
+    /**fin page detaillé*/
+    /***********************debut media BACKSTAGE**********************/
+
+
+    .castingbaiser{
+        flex-direction: row;
+        width: 100%;
+        height: 100%; 
+        margin: 1em 0;
+    }
+
+    .castingbaiser > figure > img {
+        height: 6em;
+        width: auto ;
+    }
+    .castingbaiser > figure > figcaption{
+        font-size: 12px;
+        margin-left: 50%;
+    }
+
+    .container{
+        position : relative;
+        width: 100%;
+    }
+
+    .container > p > img[src="images/detaillé/NS.png"],
+    .container > p > img[src="./images/detaillé/finnwolfhard.jpg"],
+    .container > p > img[src="images/stranger_things_logo.png"]{
+        width: 50px;
+        height: 50px;
+    }
+    .container > p > img[src="./images/detaillé/MBB.png"],
+    .container > p > img[src="images/detaillé/GM.png"]{
+        width: 50px;
+        height: 50px;
+    }
+    .groupeanecdote > article{
+        margin: 15px 1em;
+        width: 90%;
+    }
+    .groupeanecdote > article > .textscrollbar{
+        height: 13em;
+    }
+    .groupeanecdote > article > .textscrollbar > p{
+        margin: 0 2px 5px 0px;
+    }
+    .textscrollbar::-webkit-scrollbar
+    {
+        width: 5px;
+    }
+
+    .listebetisier > ul > li {
+        margin: 0 20px; 
+        padding: 1.5em 1em;
+    }
+    /***********************fin media BACKSTAGE**********************/
+
+    /***********************media page accueil***********************/
+     
+    .presentation{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .presentation p{
+        margin: 1em;
+    }
+    .presentation img{
+        width: 90%;
+        height: 80%;
+        
+    }
+    .presentation figure{
+        padding-right:2.5em ;
+    }
+    .presentation figcaption a{
+        width: fit-content;
+        height: fit-content;
+        margin-left: 39%;
+        
+    }
+    .limite_motcle{
+        margin-top: 2em;
+        flex-wrap: wrap-reverse;
+    }
+    .limite_motcle figure + img {
+        margin-left:10% ;
+    }
+    .limite_motcle figure {
+        margin-right:20% ;
+        
+    }
+    .lienEpisode_limite_age{
+        margin-left: 0;
+    }
+    #pageSerieG{
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1em;
+        padding-left:1em;
+        width: 80%;
+
+    }
+    #pageSerieG img{
+        margin: 1em;
+    }
+    /**********************header*************************/
+    .grandHeader{
+        display: none;
+    }
+    .petitHeader{
+        display: inline;
+        width: 32px;
+        height: 32px;
+    }
+    .petitHeader{
+        margin: 8px;
+    }
+    .petitHeader img{
+        width: 16px;
+        height: 16px;
+        margin:0;
+        margin-top: 2.5px;
+        border-radius: 0;
+        
+    }
+    body{
+        margin-left: 0;
+    }
+    header div img{
+        width: 48px;
+        height: 48px;
+    }
+    header nav{
+        margin-left: 0;
+    }
+    
+    /*******************main********************/
+
+    #pageSerieG{
+        margin: 0;
+        margin-left: 1.5em;
+    }
+    #pageSerieG img{
+        margin: 0;
+    }
+
+    /*********************footer*************************/
+    footer figcaption{
+        display: none;
+        
+    }
+    footer img{
+        align-items: center;
+        justify-content: end;
+        
+    }
+    footer figure{
+
+        margin-top: 1em;
+    }
+    footer img{
+        margin-top: 1em;
+    }
+    h1{
+        padding: 0;
+        margin-left: 0.5em;
+        font-size: 1.5em;
+    }
+    
+
+
+    /*******************************************************************************************
+    *                           media querry page : backstage                                  *
+    *                                                                                          *
+    ********************************************************************************************/
+    /********************************************************************************************
+    *                           media querry page : presentation episode saison                 *
+    *                                                                                           *
+    *********************************************************************************************/
+}
+
+@media (width < 430px) {
+    body{
+        padding: 0;
+    }
+    header nav{
+        margin-left: 7px;
+    }
+    #section1{
+        padding: 0;
+        margin: 10px 0 20px 0;
+        width: 105%;
+    }
+    #info_gen{
+        margin-top: 1em;
+    }
+    #colonnedroite{
+        margin-left: 0;
+    }
+    .Colonne1{
+        margin-bottom: 1em;
+    }
+    #résumé{
+        width: 22em;
+        margin-left: 1em;
+        margin-top: 2em;
+    }
+    #bande-annonce{
+        height: 15em;
+        width: 23em;
+        margin-bottom: 1em;
+    }
+    video{
+        height: 20em;
+        width: 18em;
+    }
+    .carroussel2{
+        width: 23em;
+        height: 22em;
+    }
+    .slider2{
+        --slide-width: clamp(250px, 75vw, 400px);
+	    --slide-height: clamp(240px, 50vh, 100px);
+    }
+    .slider-wrapper2{
+        height: 300px;
+    }
+    .dots2{
+        position: absolute;
+        bottom: 0px;
+    }
+    #critique{
+        margin-left: -1em;
+        width: 23em;
+        margin-bottom: 2em;
+    }
+    #episode{
+        width: 23em;
+        margin-right: 1em;
+        margin-left: -1em;
+    }
+    #fondviolet{
+        width: 25em;
+        margin-left: 0  ;
+        position: relative;
+        left: 0em;
+        box-shadow: none;
+
+    }
+    #episode > p{
+        position: relative;
+        left: 0;
+    }
+}
+

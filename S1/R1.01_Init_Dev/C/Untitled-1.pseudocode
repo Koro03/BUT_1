@@ -1,0 +1,199 @@
+constante entier MAXNUM:=3;
+constante entier MAXPERS:=10;
+
+type t_tabNumeros = tableau[MAXNUM] de entier;
+
+type t_personne = structure
+debut
+    c_nom : chaine(30);
+    c_liste : t_tabNumeros;
+    c_nbComptes : entier;
+fin
+
+type t_tabPersonnes = tableau[MAXPERS] de t_personnes;
+
+procédure permuter(entF p1:=t_personne,entF p2:=t_personne ) c'est
+début
+    tmp:=t_personne;
+    tmp := p1;
+    p1 := p2;
+    p2 := p3;
+fin
+
+procédure afficherPersonne(entF p:=t_personne ) c'est
+début
+    écrireEcran(p.c_nom);
+    pour p.nbComptes de 1 à nbComptes pas de 1 faire
+        écrireEcran(p.c_liste[i]);
+    finfaire 
+fin
+
+procédure triNaif(entF tablo:=t_tabPersonnes , nbPers: entier) c'est
+début
+    pour i de 1 à MAXPERS pas de 1 faire
+        Min = i;
+        pour i de i à nbPers-1 pas de 1 faire
+            si (Min > tab[j]) alors
+                Min = j;
+            finsi            
+        finfaire
+        permuter (entE/sortE tab[j],entE/sortE Min);
+    finfaire
+fin
+
+procédure afficherTableau(t := t_tabPersonnes, nbPers : entier) c'est
+début
+    pour i de 1 à nbPers pas de 1 faire
+        afficherPersonne(entE t[i])
+    finfaire
+fin
+
+programme principal c'est
+
+    constante t_tabPersonne BANQUE = {{"toto",{21,25,12},3},{"dupont"{56},1},{"albert",{19,123,12},111},{"alfred"{20,312},2}}
+début
+    banque : t_tabPersonnes;:
+    i,nb: entier;
+    nb := 4;
+    pour i de 1 à nb pas de 1 faire
+
+
+        banque[i] := BANQUE[i];
+    finfaire
+    afficherTableau(entE banque, entE nb);
+    triNaif(entE/sortE banque, entE nb);
+    afficherTableau(entE banque, entE nb);
+fin
+
+procédure init(entE/sortE m : matrice) c'est
+début
+    l,c : entier;
+    pour i de 1 à MAX pas de 1 faire
+        m[l,l] = l;
+        pour c de 1 à l pas de 1 faire
+            m[l,c] := m[l-c,c]
+            m[c,l] := m[l,c]
+        finfaire
+    finfaire
+fin
+
+fonction calculPGCD(entF m: t_matrice, entF tab_matrice) c'est
+début
+    i, pgcd : entier;
+    pgcd = tab_nb[1];
+    pour i de 1 à nb faire
+        pgcd = m[pgcd,tab_nb[i]];
+    finfaire
+fin
+
+
+
+
+
+constante entier N := 30;
+type t_fct := structure
+debut 
+    c_nomF := chaine(N);
+    c_nbParametres : entier;
+fin
+
+constante MAXF := 20;
+type t_tabFct = tableau[MAXF] de t_fct;
+
+type nom structure
+début
+    c_pile : t_tabFct;
+    c_ip : entier;
+
+fin 
+
+fonction init() délivre type c'est
+début
+    pile : t_pile;
+    pile.c_ip = 0;
+    retourner pile;
+fin
+
+fonction estVide(entF pile : t_pile) délivre booléen c'est
+début
+    
+    retourne (pile.c_ip == 0);
+fin
+
+procédure fonctionEnCours(paramètres) c'est
+début
+    écrireEcran(p.c_ip[p.c_ip].c_nomF);
+fin
+
+procédure depiler(entF/sortF p : t_tpile) c'est
+début
+    si (estVide(entF/sortF p)) alors
+        écrireEcran("La pile est vide, on ne peut pas dépiler");
+    sinon
+        
+        si (p.c_pile[p.c_ip].c_nomF == "main")
+            p.c_ip := p.c_ip - 1;
+            si (est(entE p)) alors
+                écrireEcran("Exécution terminée");
+            sinon
+                écrireEcran("erreur d'exécution");
+            finsi
+        sinon
+            p.c_ip := p.c_ip -1;
+        fin si
+    finsi
+fin
+
+constante entier FIN := -1;
+
+procédure inverse(paramètres) c'est
+début
+    n : entier;
+    écrireEcran("Donner un entier");
+    lireClavier(n);
+    si (n != FIN) alors
+        inverse();
+        écrireEcran(n);
+    finsi
+fin
+
+fonction calculPGCD(entF n1 : entier,entF n2 : entier) délivre entier c'est
+debut
+    a1,a2 : entier;
+    a1 := n1;
+    a2 := n2;
+    tant que (a1 != a2) faire
+        si (a1 > a2) alors
+            a1 := a1-a2;           
+        sinon
+            a2 := a2-a1;
+        finsi        
+    finfaire
+    retourne a1;
+fin
+
+procédure PGCDrecursif(entF n1:entier, entF n2 : entier) c'est
+début
+    si (a1 == a2) alors
+        pgcd := n1;
+    sinonsi (n1 > n2) alors
+        pgcd := PGCDrecursif(n1,n2)=pgcd(n1-n2,n2);
+    sinon
+        pgcd := PGCDrecursif(n1,n2)=pgcd(n1,n2-n1)
+        
+    finsi
+    retourner pgcd;
+fin
+
+procédure suite(sortF un : entier, sortF vn : entier, entF n:entier) c'est
+début
+    u,v : entier;
+    si (n==0) alors
+        un := 1;
+        vn := 1;       
+    sinon
+       suite(sortE u, sortE v, entE n-1) 
+       un := v +2*u
+       vn := 4* v+u 
+    finsi
+fin

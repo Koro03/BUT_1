@@ -1,0 +1,13 @@
+package sae201;
+
+import java.util.ArrayList;
+
+class Client {
+	private String nom;
+	private ArrayList<Reservation>liste_reservation;
+	public Client(String nom) {
+		// TODO Auto-generated constructor stub
+		this.nom = nom;
+		liste_reservation = new ArrayList<Reservation>();
+	}
+}

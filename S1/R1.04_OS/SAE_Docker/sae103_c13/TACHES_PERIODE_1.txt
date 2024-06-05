@@ -1,0 +1,4 @@
+Sloan : src1.c,  DOC_TECHNIQUE.html, gendoc-tech.php : 30%
+Elouan : DOC_UTILISATEUR.md, fin DOC_UTILISATEUR.html, cssdocutilisateur.css : 30%
+Benjamin : src2.c, debut DOC_UTILISATEUR.html : 30%
+Armel : src3.c 10%

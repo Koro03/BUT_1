@@ -1,0 +1,4 @@
+Sloan : gendoc-tech.php : 33%
+Elouan : sae103.bash : 33%
+Benjamin : gendoc-user.php : 33%
+Armel : n'est plus à l'iut, il n'a donc rien fait dans cette sae103

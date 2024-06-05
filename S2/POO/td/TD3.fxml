@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="525.0" layoutY="42.0" mnemonicParsing="false" text="Button" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="524.0" layoutY="81.0" mnemonicParsing="false" text="Button" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="90.0" />
+      <Button layoutX="524.0" layoutY="120.0" mnemonicParsing="false" text="Button" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="130.0" />
+      <ListView layoutX="24.0" layoutY="39.0" prefHeight="333.0" prefWidth="317.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0" />
+      <Label layoutX="24.0" layoutY="14.0" text="liste des clients" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="30.0" />
+      <Button layoutX="524.0" layoutY="347.0" mnemonicParsing="false" text="Button" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+   </children>
+</AnchorPane>

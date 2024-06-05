@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module entrainement {
+	requires javafx.base;
+	requires javafx.fxml;
+	
+}

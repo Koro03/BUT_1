@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Media Query</title>
+    <style>
+        /*------------- Mise en forme ----------------*/
+        body {
+            font: 1.2em Helvetica, arial, sans-serif;
+            background-color: #999999;
+        }
+
+        header,
+        main,
+        nav,
+        aside,
+        footer {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        main {
+            background-color: #47b9d7;
+            height: 10em;
+        }
+
+        nav {
+            background-color: #466dd7;
+            height: 10em;
+        }
+
+        aside {
+            background-color: #466dd7;
+            height: 10em;
+        }
+
+        header,
+        footer {
+            min-height: 10vh;
+            background-color: #52f7ee;
+        }
+
+        div{
+            display: flex;
+            align-content: center;
+        }
+        /*------------- FlexBox ----------------*/
+
+        main {
+            flex-basis:8em ;
+            flex-grow: 4;
+        }
+
+        nav {
+            flex-basis: 8em;
+            order: -1;
+        }
+
+        aside {
+            flex-basis:15em ;
+            flex-grow: 1;
+        }
+
+        /*------------- Media Query -------------*/
+        @media screen and (max-width:960px){
+            div{
+                flex-direction: column;
+            }
+            nav{
+                order: 0;
+            }
+        }
+        @media screen and (max-width:640px){
+            nav{
+                order:-1;
+            }
+            aside{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <div>
+        <main>main</main>
+        <nav>nav</nav>
+        <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+
+</body>
+
+</html>

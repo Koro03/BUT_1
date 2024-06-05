@@ -1,0 +1,73 @@
+CONSTANTEn entier N:=100;
+type t_tablo100 = tableau[N] de type;
+
+Question1:
+0 3 5 8 9
+
+Question2:
+fonction maxTab(tab : t_tablo) délivre entier c'est
+début
+    max,i=1 : entier;
+    max = tab[0];
+    pour i de 1 à N pas de 1 faire
+        si (tab[i] > max) alors
+            max := tab[i] 
+        finsi
+    finfaire
+    retourne max;
+fin
+
+fonction indMin(entF tab : t_tablo) délivre entier c'est
+début
+    min,i=1 : entier;
+    min = i;
+    pour i de 1 à N pas de 1 faire
+        si (tab[i] > max) alors
+            min := i; 
+        finsi
+    finfaire
+    retourne min;
+fin
+
+procédure copie(entF tabIn : t_tablo, entF tabOut : t_tablo) c'est
+début
+    i : entier;
+    pour i de 1 à N pas de 1 faire
+        tabIn[i] = tabOut[i];
+    finfaire
+        
+fin
+
+procédure triRempDec(entF/S tab : t_tablo,entF/S tabRes : t_tablo) c'est
+début
+    i=1,max,indMin,t : entier;
+    tabCopie : t_tablo;
+    max := maxTab(entE tab);
+    indMin := indMin(entE tab);
+    copie(entE tab, sortE tabCopie);
+    tant que (indMin != max) faire
+        tabRes[i] = tab[indMin];
+        i++;
+        indMin := indMin(entE tab);
+        tab[indMin] = max;
+    finfaire   
+
+ fin 
+
+Ex2:
+
+6 10 12 12
+
+type t_tablo = tableau[10] de entier;
+
+procédure triComptage(entF tab : t_tablo, sortF tab : t_tablo) c'est
+début
+    i : entier;
+    tabTemp : t_tablo100;
+    pour i de 1 à N pas de 1 faire
+        tabTemp[i] = 0;
+    finfaire
+    
+
+fin
+
