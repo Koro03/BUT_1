@@ -20,7 +20,7 @@ CREATE TABLE _departement(
 CREATE TABLE _commune(
     code_insee_de_la_commune   VARCHAR(3) PRIMARY KEY,
     nom_dep_la_commune         VARCHAR(50) UNIQUE,
-    code_departement           VARCHAR(50) NULL 
+    code_departement           VARCHAR(50) 
 );
 
 
@@ -42,7 +42,7 @@ CREATE TABLE _academie(
 );
 
 CREATE TABLE _etablissement(
-    uai                        VARCHAR(50) PRIMARY KEY,
+    uai                        integer PRIMARY KEY,
     nom_etablissement          VARCHAR(50),
     secteur                    VARCHAR(50),
     code_postal                VARCHAR(50),
@@ -50,7 +50,7 @@ CREATE TABLE _etablissement(
     longitude                  real,
     code_academie              integer,
     code_nat                   VARCHAR(50),
-    code_commune               VARCHAR(3)              
+    code_commune               VARCHAR(3),             
 );
 
 
@@ -61,7 +61,7 @@ CREATE TABLE _carac_tout_etablissement(
     ecart_type_de_l_ips        real,
     ep                         VARCHAR(50),
     uai                        VARCHAR(50),
-    annee_scolaire              VARCHAR(4)
+    annee_scolaire             VARCHAR(4)
 );
 
 
@@ -74,8 +74,9 @@ CREATE TABLE _carac_college(
     nb_eleves_hors_segpa_hors_ulis integer,
     nb_eleves_segpa            integer,
     nb_eleves_ulis             integer,
+    nb_eleves_ulis             integer,
     uai                        VARCHAR(50),
-    annee_scolaire              VARCHAR(50)
+    annee_scolaire             VARCHAR(50)
 );
 
 CREATE TABLE _classe(
